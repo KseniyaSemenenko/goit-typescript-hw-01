@@ -1,4 +1,4 @@
-type User = {
+interface User {
   name: string;
   age: number;
   email: string;
@@ -6,7 +6,7 @@ type User = {
     city: string;
     country: string;
   };
-};
+}
 
 const mango: User = {
   name: 'Mango',
