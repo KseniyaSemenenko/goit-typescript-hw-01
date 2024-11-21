@@ -5,15 +5,8 @@ type User = {
   password: string;
 };
 
-function createOrUpdateUser(initialValues: Partial<User>): User {
+function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
-  const defaultsUser: User = {
-    name: '',
-    surname: '',
-    email: '',
-    password: '',
-  };
-  return { ...defaultsUser, ...initialValues };
 }
 
 createOrUpdateUser({
